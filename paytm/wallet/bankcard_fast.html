@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>快捷支付银行卡</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/>
+	   <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		<div class="fast-box">			
+			<ul class="fast-bar">
+				<li>
+					<a class="fast-cell" href="balance_chose.html">
+						<div class="fast-hdc">开户行</div>
+						<div class="fast-bd">工商银行</div>
+						<div class="fast-rt"></div>
+					</a>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">银行卡号</span>
+						<input class="int" type="tel" name=""  value="" placeholder="6222 0222 0022 0100 002" />
+					</div>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">持卡人姓名</span>
+						<input class="int" type="text" name=""  value="" placeholder="小明" />
+					</div>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">身份证号</span>
+						<input class="int" type="tel" name=""  value="" placeholder="461022199212062013" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<ul class="fast-bar fast-top">				
+			<li>
+				<div class="fast-tab">
+					<span class="fast-ht ifsm">银行预留手机号</span>
+					<input class="int" type="tel" name=""  value="" placeholder="13688888888" />
+				</div>
+				</li>
+			</ul>
+		<div class="fast-but">
+			<a>下一步</a>
+		</div>
+		
+		
+		<!--遮掩背景--> 
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--手机验证码--> 
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">输入手机验证码</div>
+				<div class="fast-cent">
+					<div class="tm">验证码已发送至尾号为 6242 的手机上</div>
+					<div class="fast-im">
+						<input type="tel" name="" value="" placeholder="请输入验证码" />
+					</div>
+					<div class="fast-re">
+						<p class="pt">未收到，<a>点击重新获取</a></p>
+					</div>
+				</div>
+				<div class="f-but">
+					<div class="bck">		 			
+						<a id="lode">取消</a>					
+						<a class="butm" href="bankcard_fail.html">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){				
+				$('.fast-but a').click(function(){
+					$('.bank-bgs,.fast-tg').show(); 
+				});
+				$('#lode').click(function(){
+					$('.bank-bgs,.fast-tg').hide();
+				});
+			});
+		</script>
+
+	</body>
+</html>

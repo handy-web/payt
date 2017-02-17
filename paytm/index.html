@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>钱包首页</title>
+    <script type="text/javascript" src="wap/js/mui.js"></script>
+    <link href="wap/css/mui.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="wap/css/style.css" />
+</head>
+<body>
+	<div class="box-bar">
+		<div class="box-nav">
+			<a class="act" href="wallet/payme.html"> 
+				<img class="" src="wap/img/app-icm.png" /> 
+				<p class="pt">付款码</p>
+			</a>
+			<a class="act" href="wallet/bankcard_inc.html">
+				<img class="" src="wap/img/app-iyhk.png" />
+				<p class="pt">银行卡</p>
+			</a> 
+			<a class="act" href="wallet/balance.html">
+				<img class="" src="wap/img/app-iye.png" />
+				<p class="pt">999.99元</p>
+			</a>
+		</div>  
+	</div>
+	<div class="box-tab">
+		<div class="tab">钱包服务</div>
+		<table class="table">
+			<tbody>
+				<tr> 
+					<td>
+						<a class="acc" href="wallet/transfer.html">
+							<img src="wap/img/app-izz.png"/>
+							<p class="pl">转账</p>
+						</a>
+					</td>
+					<td>
+						<a class="acc" href="wallet/recharge.html">
+							<img src="wap/img/app-icz.png"/>
+							<p class="pl">充值</p>
+						</a>
+					</td>
+					<td>
+						<a class="acc" href="wallet/withdrawal.html">
+							<img src="wap/img/app-itx.png"/>
+							<p class="pl">提现</p>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div class="box-banner">
+		<div id="slider" class="mui-slider" >
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="wap/img/app-ba03.jpg">
+					</a>
+				</div>
+				<!-- 第一张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="wap/img/app-ba01.jpg">
+					</a>
+				</div>
+				<!-- 第二张 -->
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="wap/img/app-ba02.jpg">
+					</a>
+				</div>
+				<div class="mui-slider-item">
+					<a href="#">
+						<img src="wap/img/app-ba03.jpg">
+					</a>
+				</div>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#">
+						<img src="wap/img/app-ba01.jpg">
+					</a>
+				</div>
+			</div>
+			<div class="mui-slider-indicator">
+				<div class="mui-indicator mui-active"></div>
+				<div class="mui-indicator"></div>
+				<div class="mui-indicator">
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="box-int">商城服务</div>
+
+	<div class="box-cen">
+		<ul class="box-flex">
+			<li>
+				<a class="box-grid" href="modity/order_detail.html">
+					<div class="box-item">
+						<img src="wap/img/app-tub.png"/>
+						<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+					</div>
+					<div class="box-sec">
+						<p class="ptms">&#65509;99.00</p>
+						<div class="rtm"><img src="wap/img/app-gwc.png"/></div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a class="box-grid" href="modity/order_detail.html">
+					<div class="box-item">
+						<img src="wap/img/app-tub.png"/>
+						<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+					</div>
+					<div class="box-sec">
+						<p class="ptms">&#65509;99.00</p>
+						<div class="rtm"><img src="wap/img/app-gwc.png"/></div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+	<nav class="cen-bar">
+			<div class="cen-line">			
+				<a href="../index.html" class="act">
+					<i class="iconfont">&#xe600;</i>
+					<label class="pt">钱包首页</label>				
+				</a>								
+				<a href="modity/order.html">
+					<i class="iconfont">&#xe601;</i>
+					<label class="pt">商品列表</label>
+				</a>								
+				<a href="modity/orderlist.html">
+					<i class="iconfont">&#xe603;</i>
+					<label class="pt">账单列表</label>
+				</a>								
+				<a href="person/center.html">
+					<i class="iconfont">&#xe602;</i>
+					<label class="pt">个人中心</label>
+				</a>								
+			</div>
+		</nav>
+		<!--轮播图-->
+		<script>
+			var gallery = mui('.mui-slider');
+			gallery.slider({ 
+				interval: 4000
+			});
+		</script>
+</body>
+</html>

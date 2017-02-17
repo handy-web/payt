@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>银行卡管理</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet" />	  
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		<div class="bank-trm">
+			<a class="bank-cell" href="bankcard_certifi.html">
+				<div class="bank-hdc">
+					<i class="imt1"></i>
+					<label class="lab">已认证</label>
+				</div>
+				<div class="bank-bd">
+					<span>工商银行（快捷支付）</span>
+					<label class="latm">**** **** *** *** 2001</label>
+				</div>
+				<div class="bank-rt"></div> 
+			</a>
+			<a class="bank-cell" href="bankcard_uncertifi.html">
+				<div class="bank-hdc">
+					<i class="imt3"></i>
+					<label class="lan">未认证</label>
+				</div>
+				<div class="bank-bd">
+					<span>招商银行（提现卡）</span>
+					<label class="latm">**** **** *** *** 2001</label>
+				</div>
+				<div class="bank-rt"></div>
+			</a>
+			<a class="bank-cell bank-addc">
+				<div class="bank-hdc">
+					<i class="imt2"></i>					
+				</div>
+				<div class="bank-bd">添加银行卡</div>
+				<div class="bank-rt"></div>
+			</a>
+		</div>		
+		
+		
+		<!--遮掩背景--> 
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--添加银行--> 
+		<div class="bank-tg" style="display: none;">
+			<div class="bank-bgm">
+				<div class="bank-title">请选择卡类型</div>
+				<div class="bank-cent">
+					<ul class="radiobox">
+						<li>
+							<input name="ck-radio" type="radio" id="radio_a" >
+							<label for="radio_a">快捷支付银行卡</label>
+						</li>
+						<li>
+							<input name="ck-radio" type="radio" id="radio_b" >
+							<label for="radio_b">提现银行卡</label>
+						</li>
+					</ul> 
+				</div>
+				<div class="but">
+					<div class="bck">					
+						<a id="lode">取消</a>					 
+						<a class="butm">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){				
+				$('.bank-addc').click(function(){
+					$('.bank-bgs,.bank-tg').show(); 
+				});
+				$('#lode').click(function(){
+					$('.bank-bgs,.bank-tg').hide(); 
+				});
+							
+				$('.butm').click(function(){
+					if($(":radio").is(":checked")){
+						if ($(":radio[name='ck-radio']").eq(0).is(":checked")){  
+							window.location.href="bankcard_fast.html";
+						}else{
+							window.location.href="bankcard_fill.html";
+						}
+					}else{
+						alert("请选择卡类型");
+					}
+				});					
+			});
+		</script>
+		
+	</body>
+</html>

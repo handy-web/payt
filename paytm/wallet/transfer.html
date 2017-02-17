@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>转账</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/>
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head> 
+	<body>		
+		<div class="trans-line">
+			<div class="trans-inc">
+				<span class="sp">转出用户</span>
+				<input type="tel" name="" value="" placeholder="请输入转账用户手机号" />
+			</div>
+			<div class="trans-pl">
+				<p class="pt">根据手机号码查找到用户实名：晓明</p>
+			</div>
+		</div>
+		<div class="trans-list">
+			<span class="sp">转出金额</span>
+			<em> &#65509;</em>
+			<input type="tel" name="" value="" placeholder="请输入转账金额"/>	
+			<span class="sp"></span>
+		</div> 
+		<div class="trans-qb">
+			<p class="pn">钱包金额：80元<span>全部转出</span></p>
+		</div>
+		<div class="trans-lat">
+			<a>确认转出</a>
+		</div>
+			
+		</style>
+		<!--遮掩背景--> 
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--手机验证码--> 
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">输入支付密码</div>
+				<div class="fast-cent">
+					<div class="tm">余额：<span class="spt">80.00</span>元，转账给<span class="spt-m"> 陈小明 </span><span class="spt">79.00</span>元。</div>
+					<div class="fast-im">
+						<input type="password" name="" value="" placeholder="请输入支付密码" />
+					</div>
+					<div class="fast-re">
+						<p class="pt"><a>忘记支付密码！</a></p>
+					</div>
+				</div>  
+				<div class="f-but"> 
+					<div class="bck">					
+						<a id="lode">取消</a>					
+						<a class="butm" href="transfer_success.html">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){				
+				$('.trans-lat a').click(function(){
+					$('.bank-bgs,.fast-tg').show(); 
+				});
+				$('#lode').click(function(){
+					$('.bank-bgs,.fast-tg').hide();
+				});
+			});
+		</script>
+	</body>
+</html>

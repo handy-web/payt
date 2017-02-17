@@ -1,0 +1,423 @@
+{
+	"person/center.html": {
+		"resources": [
+			"wap/fonts/iconfont.woff",
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/img/app-er.png",
+			"wap/img/app-ha.jpg",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-cqb.png",
+			"wap/img/app-cdd.png",
+			"wap/img/app-cdz.png",
+			"wap/img/app-caq.png",
+			"wap/img/app-czl.png",
+			"person/center_gement.html",
+			"person/center_address.html",
+			"person/center_security.html",
+			"person/myorder.html",
+			"modity/order.html",
+			"index.html"
+		],
+		"refer": [
+			"person/center_gement.html",
+			"person/center_address.html",
+			"person/center_security.html",
+			"person/myorder.html",
+			"modity/order.html",
+			"index.html"
+		]
+	},
+	"modity/bankcard_success.html": {
+		"resources": [
+			"wap/img/app-cn2.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-zsyh.jpg"
+		],
+		"refer": []
+	},
+	"person/center_security .html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css"
+		],
+		"refer": []
+	},
+	"person/center_security.html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_log.html",
+			"person/center_security_repay.html",
+			"person/center.html"
+		],
+		"refer": [
+			"person/center_security_log.html",
+			"person/center_security_repay.html",
+			"person/center.html"
+		]
+	},
+	"person/center_security_log.html": {
+		"resources": [
+			"person/center_security_logx.html",
+			"person/center_security_logw.html",
+			"person/center_security.html"
+		],
+		"refer": [
+			"person/center_security_logx.html",
+			"person/center_security_logw.html",
+			"person/center_security.html"
+		]
+	},
+	"person/center_security_logx.html": {
+		"resources": [
+			"person/center_security_log.html"
+		],
+		"refer": [
+			"person/center_security_log.html"
+		]
+	},
+	"person/center_security_logw.html": {
+		"resources": [
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_log.html"
+		],
+		"refer": [
+			"person/center_security_log.html"
+		]
+	},
+	"index.html": {
+		"resources": [
+			"wap/fonts/iconfont.woff",
+			"wap/img/app-bananr.png",
+			"wap/img/app-liz.png",
+			"wap/css/style.css",
+			"wap/img/app-er.png",
+			"wap/img/app-tub.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-gwc.png",
+			"wap/img/app-icm.png",
+			"wap/img/app-icz.png",
+			"wap/img/app-ba03.jpg",
+			"wap/img/app-ba02.jpg",
+			"wap/img/app-iyhk.png",
+			"wap/img/app-ba01.jpg",
+			"wap/img/app-izz.png",
+			"wap/img/app-iye.png",
+			"wap/img/app-itx.png",
+			"wallet/payme.html",
+			"wallet/bankcard_inc.html",
+			"modity/order.html",
+			"modity/orderlist.html",
+			"wallet/recharge.html",
+			"wallet/transfer.html",
+			"wallet/withdrawal.html",
+			"person/center.html"
+		],
+		"refer": [
+			"wallet/payme.html",
+			"wallet/bankcard_inc.html",
+			"modity/order.html",
+			"modity/orderlist.html",
+			"wallet/recharge.html",
+			"wallet/transfer.html",
+			"wallet/withdrawal.html",
+			"person/center.html"
+		]
+	},
+	"modity/order_detail.html": {
+		"resources": [
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/css/style.css",
+			"wap/img/app-liz03.jpg",
+			"wap/img/app-liz04.png",
+			"wap/img/app-liz02.jpg",
+			"wap/img/app-liz05.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/js/doc.js",
+			"modity/order_confirm.html",
+			"modity/order.html"
+		],
+		"refer": [
+			"modity/order_confirm.html",
+			"modity/order.html"
+		]
+	},
+	"modity/order.html": {
+		"resources": [
+			"wap/img/app-del.png",
+			"wap/fonts/iconfont.woff",
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/css/style.css",
+			"wap/img/app-tub.png",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"wap/img/app-gwc.png",
+			"wap/img/app-bgwc.png",
+			"modity/order_detail.html",
+			"modity/orderlist.html",
+			"index.html",
+			"person/center.html"
+		],
+		"refer": [
+			"modity/order_detail.html",
+			"modity/orderlist.html",
+			"index.html",
+			"person/center.html"
+		]
+	},
+	"register.html": {
+		"resources": [
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/css/style.css",
+			"wap/img/app-regist_01.png",
+			"wap/img/app-rdown.png",
+			"wap/img/app-r01.png",
+			"wap/js/mui.js",
+			"wap/img/app-regist_02.png",
+			"wap/img/app-regist_06.png",
+			"wap/img/app-regist_03.png",
+			"wap/css/mui.css",
+			"wap/img/app-wh.png",
+			"wap/img/app-regist_05.png",
+			"wap/img/app-regist_04.png",
+			"wap/img/app-r02.png"
+		]
+	},
+	"wallet/payme.html": {
+		"resources": [
+			"wap/img/app-ewm.png",
+			"wap/img/app-tet.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wallet/bankcard_inc.html": {
+		"resources": [
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/img/app-add.png",
+			"wap/img/app-er.png",
+			"wap/img/app-cn1.png",
+			"wap/img/app-cn2.png",
+			"wallet/bankcard_fill.html",
+			"index.html",
+			"wap/img/app-yrz.png",
+			"wap/img/app-wrz.png",
+			"wallet/bankcard_fast.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html",
+			"index.html",
+			"wallet/bankcard_fast.html"
+		]
+	},
+	"modity/orderlist.html": {
+		"resources": [
+			"wap/js/demo.js",
+			"wap/img/app-dow.png",
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/fonts/iconfont.woff",
+			"wap/css/style.css",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center.html",
+			"modity/order.html"
+		],
+		"refer": [
+			"person/center.html",
+			"modity/order.html"
+		]
+	},
+	"modity/order_confirm.html": {
+		"resources": [
+			"modity/order_detail.html",
+			"wap/img/app-botton.png",
+			"wap/img/app-addr.png",
+			"wap/img/app-sp.jpg"
+		],
+		"refer": [
+			"modity/order_detail.html"
+		]
+	},
+	"wallet/bankcard_fill.html": {
+		"resources": [
+			"wap/js/demos.js",
+			"wap/css/sm.css",
+			"wap/js/sm-city-picker.js",
+			"wap/js/sm.js",
+			"wap/js/zepto.js",
+			"wallet/balance_chose.html",
+			"wallet/bankcard_branch.html",
+			"wap/js/jquery-1.9.0.min.js",
+			"wap/css/style.css",
+			"wap/js/mui.js",
+			"wap/css/mui.css",
+			"person/center_security_pay.html",
+			"wallet/bankcard_inc.html",
+			"wallet/bankcard_success.html",
+			"wap/img/app-cg.png",
+			"wap/img/app-zsyh.jpg"
+		],
+		"refer": [
+			"wallet/balance_chose.html",
+			"wallet/bankcard_branch.html",
+			"person/center_security_pay.html",
+			"wallet/bankcard_inc.html",
+			"wallet/bankcard_success.html"
+		]
+	},
+	"wallet/balance_chose.html": {
+		"resources": [
+			"wap/css/mui.indexedlist.css",
+			"wap/js/mui.indexedlist.js",
+			"wap/js/mui.min.js",
+			"wallet/bankcard_fill.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html"
+		]
+	},
+	"wallet/bankcard_branch.html": {
+		"resources": [
+			"wallet/bankcard_fill.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html"
+		]
+	},
+	"wallet/recharge.html": {
+		"resources": [
+			"index.html",
+			"wap/img/app-cn2.png",
+			"wap/img/app-cn1.png",
+			"wallet/bankcard_fast.html",
+			"wallet/recharge_success.html"
+		],
+		"refer": [
+			"index.html",
+			"wallet/bankcard_fast.html",
+			"wallet/recharge_success.html"
+		]
+	},
+	"wallet/transfer.html": {
+		"resources": [
+			"wap/js/jquery-1.9.0.min.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wallet/withdrawal.html": {
+		"resources": [
+			"wap/img/app-add.png",
+			"wap/img/app-zsyh.jpg",
+			"index.html",
+			"wallet/withdrawal_explain.html"
+		],
+		"refer": [
+			"index.html",
+			"wallet/withdrawal_explain.html"
+		]
+	},
+	"wallet/withdrawal_explain.html": {
+		"resources": [
+			"wap/img/app-txsm.png",
+			"wallet/withdrawal.html"
+		],
+		"refer": [
+			"wallet/withdrawal.html"
+		]
+	},
+	"person/center_security_pay.html": {
+		"resources": [
+			"wallet/bankcard_fill.html",
+			"person/center_security_repay.html"
+		],
+		"refer": [
+			"wallet/bankcard_fill.html",
+			"person/center_security_repay.html"
+		]
+	},
+	"person/center_gement.html": {
+		"resources": [
+			"person/center_modgement.html",
+			"person/center.html"
+		],
+		"refer": [
+			"person/center_modgement.html",
+			"person/center.html"
+		]
+	},
+	"person/center_modgement.html": {
+		"resources": [
+			"person/center_gement.html"
+		],
+		"refer": [
+			"person/center_gement.html"
+		]
+	},
+	"person/center_modaddr.html": {
+		"resources": [
+			"wap/js/demos.js",
+			"wap/css/sm.css",
+			"wap/js/sm-city-picker.js",
+			"wap/js/sm.js",
+			"wap/js/zepto.js",
+			"person/center_address.html"
+		],
+		"refer": [
+			"person/center_address.html"
+		]
+	},
+	"person/center_address.html": {
+		"resources": [
+			"person/center_modaddr.html",
+			"person/center.html"
+		],
+		"refer": [
+			"person/center_modaddr.html",
+			"person/center.html"
+		]
+	},
+	"person/center_security_repay.html": {
+		"resources": [
+			"person/center_security_pay.html",
+			"person/center_security.html"
+		],
+		"refer": [
+			"person/center_security_pay.html",
+			"person/center_security.html"
+		]
+	},
+	"person/myorder.html": {
+		"resources": [
+			"wap/img/app-sp.jpg"
+		]
+	},
+	"wallet/bankcard_fast.html": {
+		"resources": [
+			"wallet/recharge.html",
+			"wallet/bankcard_inc.html"
+		],
+		"refer": [
+			"wallet/recharge.html",
+			"wallet/bankcard_inc.html"
+		]
+	},
+	"wallet/recharge_success.html": {
+		"resources": [
+			"wallet/recharge.html",
+			"wap/img/app-cg.png"
+		],
+		"refer": [
+			"wallet/recharge.html"
+		]
+	}
+}

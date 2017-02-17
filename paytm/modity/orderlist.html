@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>账单列表</title> 
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet" />
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	    <script type="text/javascript" src="../wap/js/demo.js" ></script>
+	</head>
+	<body>	
+		<div class="screening">
+		    <ul>       
+		        <li class="Sort"><span>选择月份</span></li>
+		        <li class="Brand"><span>全部类型</span></li>      
+		    </ul>
+		</div>
+		
+		<!-- 选择月份-->
+		<div class="Sort-eject Sort-height">
+		    <ul class="Sort-Sort" id="Sort-Sort">
+		        <li onclick="Sorts(this)">本月（10月份）</li>
+		        <li onclick="Sorts(this)">9月份</li>
+		        <li onclick="Sorts(this)">8月份</li>
+		        <li onclick="Sorts(this)">7月份</li>
+		        <li onclick="Sorts(this)">6月份</li>
+		        <li onclick="Sorts(this)">5月份</li>
+		    </ul>
+		</div>
+		<!--全部类型-->
+		<div class="Category-eject">
+		    <ul class="Category-w" id="Categorytw">
+		        <li onclick="Categorytw(this)">全部类型</li>
+		        <li onclick="Categorytw(this)">消费</li>
+		        <li onclick="Categorytw(this)">订单消费</li>
+		        <li onclick="Categorytw(this)">微信充值</li>
+		        <li onclick="Categorytw(this)">快捷充值</li>
+		        <li onclick="Categorytw(this)">支付宝收款</li>
+		        <li onclick="Categorytw(this)">微信收款</li>
+		        <li onclick="Categorytw(this)">转账</li>
+		    </ul>
+		</div>		
+		
+		<div class="ord-flex">
+			<div class="grad1">时间</div>
+			<div class="grad2">类型</div>
+			<div class="grad3">金额</div>
+			<div class="grad4">状态</div>
+		</div>
+		
+		<div class="ord-item">
+			<ul class="ord-line">				 
+				<li>
+					<a class="ord-row" href="orderlist_detail.html">
+						<p class="ord-title">订单编号：6546131321654611</p> 
+						<dl class="ord-ol">
+							<dt>
+								<div class="row1">09-23 15:00:00</div> 
+								<div class="row2">订单消费</div>
+								<div class="row3">&#65509;99.00</div>
+								<div class="rt"><span>成功</span></div>
+							</dt>							
+						</dl>
+					</a>
+					<a class="ord-row" href="orderlist_detail.html">
+						<p class="ord-title">订单编号：6546131321654611</p> 
+						<dl class="ord-ol">
+							<dt>
+								<div class="row1">09-23 15:45:00</div> 
+								<div class="row2">订单消费</div>
+								<div class="row3">&#65509;99.00</div>
+								<div class="rt"><span>成功</span></div>
+							</dt>							
+						</dl>
+					</a>
+				</li>
+				<li>
+					<a class="ord-row" href="orderlist_detail.html">
+						<p class="ord-title">订单编号：6546131321654611</p> 
+						<dl class="ord-ol">
+							<dt>
+								<div class="row1">09-23 11:00:00</div> 
+								<div class="row2">消费</div>
+								<div class="row3">&#65509;1899.00</div>
+								<div class="rt"><span>待发货</span></div>
+							</dt>							
+						</dl>
+					</a>					
+				</li>
+				<li>
+					<a class="ord-row" href="orderlist_detail.html">
+						<p class="ord-title">订单编号：6546131321654611</p> 
+						<dl class="ord-ol">
+							<dt>
+								<div class="row1">09-23 11:00:00</div> 
+								<div class="row2">消费</div>
+								<div class="row3">&#65509;1899.00</div>
+								<div class="rt"><span>待发货</span></div>
+							</dt>							
+						</dl>
+					</a>					
+				</li>
+				<li>
+					<a class="ord-row" href="orderlist_detail.html">
+						<p class="ord-title">订单编号：6546131321654611</p> 
+						<dl class="ord-ol">
+							<dt>
+								<div class="row1">09-23 12:00:00</div> 
+								<div class="row2">消费</div>
+								<div class="row3">&#65509;1899.00</div>
+								<div class="rt"><span>待发货</span></div>
+							</dt>							
+						</dl>
+					</a>					
+				</li>
+			</ul>
+		</div>
+				
+		<nav class="cen-bar">
+			<div class="cen-line">			
+				<a href="../index.html">
+					<i class="iconfont">&#xe600;</i>
+					<label class="pt">钱包首页</label>				
+				</a>								
+				<a href="order.html">
+					<i class="iconfont">&#xe601;</i>
+					<label class="pt">商品列表</label>
+				</a>								
+				<a class="act" href="orderlist.html">
+					<i class="iconfont">&#xe603;</i>
+					<label class="pt">账单列表</label>
+				</a>								
+				<a href="../person/center.html">
+					<i class="iconfont">&#xe602;</i>
+					<label class="pt">个人中心</label>
+				</a>								
+			</div>
+		</nav>
+	</body>
+</html>

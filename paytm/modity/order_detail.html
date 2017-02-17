@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>商品详情</title> 
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet" />
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		<div class="det-item">
+			<img src="../wap/img/app-liz02.jpg"/>
+		</div>
+		<div class="det-box"> 
+			<h3>Misfit Flash 智能手环</h3>
+			<p class="pt">促销价<ins>&#65509;119.00</ins><span>原价</span><del>&#65509;199.00</del></p>
+			<p class="pt">库存数<em>99</em><i>销量 999</i></p>
+			<p class="pt">颜色<label>苹果7【4.7寸】玫瑰金 苹果</label></p>
+		</div>
+		<div class="det-int">点击查看详情 </div>
+		
+		<div class="det-fott">
+			<div class="det-btm"> 
+				<a class="cut-l">加入购物车</a>
+				<a class="cut-r" href="order_confirm.html">立即购买</a>
+			</div>
+		</div>
+		
+		<!--商品详情-->
+		<div class="det-wt" style="display: none;">
+			<div class="det-tit">
+				<i class="imt"></i>
+				商品详情
+			</div>
+			<div class="det-imb">
+				<img src="../wap/img/app-liz03.jpg"/>
+				<img src="../wap/img/app-liz04.png"/>
+				<img src="../wap/img/app-liz05.png"/>
+			</div>
+		</div>
+		<script>
+
+		$(document).ready(function(){
+			$('.det-int').unbind().click(function(){
+				$('.det-wt').css("top","80px").animate({"top":"40px"},500).show();
+			});
+			$('.imt').click(function(){
+				$('.det-wt').hide();
+			});
+		});
+		</script>
+	</body>
+</html>

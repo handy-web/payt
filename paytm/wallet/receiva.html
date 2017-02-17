@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>收款</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/>	 
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		
+		<div class="rec-list">
+			<span class="sp">收款金额</span>
+			<em> &#65509;</em>
+			<input type="tel" name=""  value="" placeholder="请输入转账金额"/>	
+			<span class="sp"></span>
+		</div>
+		<div class="rec-tab">
+			<h4>选择收款方式</h4>
+			<ul class="rec-way">
+				<li class="rec-no">
+					<input type="radio" name="radio_pay" id="pay_1" value="" />
+					<label for="pay_1">微信支付</label>
+				</li>				
+			</ul>
+			<div class="rec-act">生成微信收款码，由支付方微信扫描付款完成收款。</div>
+			<ul class="rec-way">
+				<li class="rec-no">
+					<input type="radio" name="radio_pay" id="pay_2" value="" />
+					<label for="pay_2">支付包支付</label>
+				</li>				
+			</ul>
+			<div class="rec-act">生成支付宝收款码，由支付方支付宝扫描付款完成收款。</div>
+		</div>
+		<div class="rec-but">
+			<a>下一步</a>
+		</div> 
+		<script>
+			$().ready(function(){			
+				$('.rec-but a').click(function(){						
+					if ($(":radio").is(":checked")){  
+						if($(":radio[name='radio_pay']").eq(0).is(":checked")){
+							window.location.href="receiva_code.html";
+						}else{
+							window.location.href="receiva_code.html";
+						}						
+					}else{
+						alert("请选择收款方式！");
+					}
+				});							
+			});
+		</script>
+	</body>
+</html>

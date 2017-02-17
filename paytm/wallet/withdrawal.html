@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>提现</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/> 
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>	
+		<div class="wal-top">
+			<div class="wal-list"> 
+				<span class="sp">提现金额</span> 
+				<em> &#65509;</em>
+				<input type="tel" name=""  value="" placeholder="请输入转账金额"/>	
+				<span class="sp"></span>
+			</div>
+		</div>
+		<div class="wal-bte">可提现金额：<span>899.00</span>元</div>
+		<ul class="wal-lint">
+			<li>
+				<a class="wal-cell" href="bankcard_certifi.html">
+					<div class="tex1">
+						<img src="../wap/img/app-zsyh.jpg"/>
+					</div>
+					<div class="tex2">
+						<p class="pt">招商银行（陈小明）</p>
+						<label>62220221102******023</label>
+					</div>	
+					<div class="rt"></div>
+				</a>			
+			</li>
+		</ul>
+		<!--没有银行卡可添加-->
+		<ul class="wal-row" style="display: none;">
+			<li>
+				<a class="bank-cell bank-addc">
+					<div class="bank-hdc">
+						<i class="imt2"></i>					
+					</div>
+					<div class="bank-bd">添加银行卡</div>
+					<div class="bank-rt"></div>
+				</a>
+			</li>
+		</ul>
+		<div class="wal-lat">
+			<a>确认提现</a>
+		</div>
+		
+		<div class="wal-fot">
+			<div class="wal-cen">
+				<a href="withdrawal_explain.html">提现说明</a>
+			</div>			
+		</div>
+		
+		<!--遮掩背景--> 
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--手机验证码--> 
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">输入支付密码</div>
+				<div class="fast-cent">
+					<div class="tm">余额：<span class="spt">80.00</span>元，提现<span class="spt">79.00</span>元。</div>
+					<div class="fast-im">
+						<input type="password" name="" value="" placeholder="请输入支付密码" />
+					</div>
+					<div class="fast-re">
+						<p class="pt"><a>忘记支付密码！</a></p>
+					</div>
+				</div> 
+				<div class="f-but"> 
+					<div class="bck">					
+						<a id="lode">取消</a>					 
+						<a class="butm" href="withdrawal_hand.html">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--添加银行--> 
+		<div class="bank-tg" style="display: none;">
+			<div class="bank-bgm">
+				<div class="bank-title">请选择卡类型</div>
+				<div class="bank-cent">
+					<ul class="radiobox">
+						<li>
+							<input name="ck-radio" type="radio" id="radio_a" >
+							<label for="radio_a">快捷支付银行卡</label>
+						</li>
+						<li>
+							<input name="ck-radio" type="radio" id="radio_b" >
+							<label for="radio_b">提现银行卡</label>
+						</li>
+					</ul>
+				</div>
+				<div class="but">
+					<div class="bck">					
+						<a id="lode_add">取消</a>					 
+						<a id="wap_r" class="butm">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$(document).ready(function(){				
+				$('.wal-lat a').click(function(){
+					$('.bank-bgs,.fast-tg').show(); 
+				}); 
+				$('#lode').click(function(){
+					$('.bank-bgs,.fast-tg').hide();
+				});
+			});
+		</script>
+		
+		<script>
+			$(document).ready(function(){				
+				$('.bank-bd').click(function(){ 
+					$('.bank-bgs,.bank-tg').show(); 
+				});
+				$('#lode_add').click(function(){
+					$('.bank-bgs,.bank-tg').hide(); 
+				});
+				
+				$('#wap_r').click(function(){
+					if($(":radio").is(":checked")){
+						if ($(":radio[name='ck-radio']").eq(0).is(":checked")){  
+							window.location.href="bankcard_fast.html";
+						}else{
+							window.location.href="bankcard_fill.html";
+						}
+					}else{
+						alert("请选择卡类型");
+					}
+				});		
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>充值</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/>	   
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		
+		<div class="rec-list">
+			<span class="sp">充值金额</span>
+			<em> &#65509;</em>
+			<input type="tel" name=""  value="" placeholder="请输入转账金额"/>				
+		</div>
+		<div class="rec-tab">
+			<h4>选择充值方式</h4>
+			<ul class="rec-way">
+				<li>
+					<input type="radio" name="radio_pay" id="pay_1" checked />
+					<label for="pay_1">微信支付</label>
+				</li>
+				<li>
+					<input type="radio" name="radio_pay" id="pay_2" />
+					<label for="pay_2">银联支付</label>
+				</li>
+				<li>
+					<input type="radio" name="radio_pay" id="pay_3" />
+					<label for="pay_3">使用新快捷支付卡充值</label>
+				</li>
+			</ul>
+		</div>
+		<div class="rec-but">
+			<a>下一步</a>
+		</div>
+		
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--手机验证码--> 
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">输入手机验证码</div>
+				<div class="fast-cent">
+					<div class="tm">验证码已发送至尾号为 6242 的手机上</div>
+					<div class="fast-im">
+						<input type="tel" name="" value="" placeholder="请输入验证码" />
+					</div>
+					<div class="fast-re">
+						<p class="pt">未收到，<a>点击重新获取</a></p>
+					</div>
+				</div>
+				<div class="f-but">
+					<div class="bck">		 			
+						<a id="lode">取消</a>					 
+						<a class="butm" href="recharge_success.html">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$().ready(function(){							
+					$('.rec-but a').click(function(){
+						if ($(":radio").is(":checked")) { 						
+							if ($(":radio[name='radio_pay']").eq(0).is(":checked")) { 
+								alert("微信支付");
+							}else if($(":radio[name='radio_pay']").eq(1).is(":checked")){
+								$('.bank-bgs,.fast-tg').show();
+							}else{
+								window.location.href="bankcard_fast.html";
+							}
+						} else{
+							alert("请选择充值方式！")
+						}
+						
+					});					
+				$('#lode').click(function(){
+					$('.bank-bgs,.fast-tg').hide();
+				});
+			});
+		</script>
+
+	</body>
+</html>

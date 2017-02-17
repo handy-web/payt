@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>修改个人资料</title>
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet"/>
+	   <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	</head>
+	<body>
+		<div class="fast-box">			
+			<ul class="fast-bar">
+				<li>
+					<a class="fast-cell">
+						<div class="fast-hdc">手机号</div>
+						<div class="fast-bd">13688888888</div>
+						<div class="fast-rt"></div>
+					</a>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">姓名</span>
+						<input class="int" type="tel" name=""  value="小明" />
+					</div>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">性别</span>
+						<input id="sex_mod" class="int" type="text" name="" readonly value="男" />
+					</div>
+				</li>
+				<li>
+					<div class="fast-tab">
+						<span class="fast-ht">身份证号</span>
+						<input class="int" type="tel" name=""  value="461022199212062013" />
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="ge-but">
+			<a href="center_gement.html">确认修改</a>
+		</div>
+		<!--遮罩-->
+		<div class="ord-im" style="display: none;"></div>
+		<!--修改手机号码-->
+		<div class="bank-tg" id="old_phone" style="display: none;">
+			<div class="bank-bgm">
+				<div class="bank-title">修改手机号码</div>
+				<div class="bank-cent">
+					<ul class="mod-line">
+						<li>
+							<span class="sp sptt">原手机号</span>
+							<input class="int mod-wit" type="tel" maxlength="16" name="" value="136****888" readonly="readonly" />
+							<a class="mod-bar">获取验证码</a>
+						</li>
+						<li>
+							<span class="sp sptt">验证码</span>
+							<input class="int" type="tel" maxlength="16" name="" value="" placeholder="请输入验证码" />							
+						</li>				
+					</ul>	
+				</div>
+				<div class="but">
+					<div class="bck">					
+						<a id="modlode_1">取消</a>					 
+						<a id="mod_act" class="butm">确认下一步</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--新手机号码验证-->
+		<div class="bank-tg" id="new_phone" style="display: none;">
+			<div class="bank-bgm">
+				<div class="bank-title">新手机号码</div>
+				<div class="bank-cent">
+					<ul class="mod-line">
+						<li>
+							<span class="sp sptt">手机号</span>
+							<input class="int" id="phone_a" type="tel" maxlength="16" name="" value="" placeholder="请输入新手机号" />							
+						</li>
+						<li>
+							<span class="sp sptt">验证码</span>
+							<input class="int mod-wit" type="tel" maxlength="16" name="" value="" placeholder="请输入验证码" />	
+							<a class="mod-bar">获取验证码</a>
+						</li>				
+					</ul>	
+				</div>
+				<div class="but">
+					<div class="bck">					
+						<a id="modlode_2">取消</a>					 
+						<a id="mod_ture" class="butm">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--请选择性别-->
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">请选择性别</div>
+				<ul class="reg-item">
+					<li>男</li>
+					<li>女</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#sex_mod').click(function(){
+					$('.fast-tg,.ord-im').show();
+				});				
+				$('.reg-item li').click(function(){
+					var row = $(this).text();
+					//alert(row);
+					$('#sex_mod').val(row);
+					$('.fast-tg,.ord-im').hide();
+				});
+				//修改手机号
+				$('.fast-cell').click(function(){
+					$('#old_phone,.ord-im').show();
+					$('#mod_act').click(function(){
+						$('#old_phone').hide();
+						$('#new_phone').show();
+					});
+				});
+				$('#modlode_1').click(function(){
+					$('#old_phone,.ord-im').hide();					
+				});
+				$('#modlode_2').click(function(){
+					$('#new_phone,.ord-im').hide();					
+				});
+				$('#mod_ture').click(function(){ 
+					var item = $('#phone_a').val();
+					//alert(item); 
+					$('.fast-bd').text(item);
+					$('#new_phone,.ord-im').hide();					
+				});
+				
+				
+			})
+		</script>
+	</body>
+</html>

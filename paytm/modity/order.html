@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>商品列表</title> 
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet" />
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>	  
+	</head>
+	<body>
+		<div class="box-cen ord-tom">
+			<ul class="box-flex">
+				<li>
+					<a class="box-grid" href="order_detail.html">
+						<div class="box-item">
+							<img src="../wap/img/app-tub.png"/>
+							<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+						</div>
+						<div class="box-sec">
+							<p class="ptms">&#65509;99.00</p>
+							<div class="rtm"><img src="../wap/img/app-gwc.png"/></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="box-grid" href="order_detail.html">
+						<div class="box-item">
+							<img src="../wap/img/app-tub.png"/>
+							<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+						</div>
+						<div class="box-sec">
+							<p class="ptms">&#65509;99.00</p>
+							<div class="rtm"><img src="../wap/img/app-gwc.png"/></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="box-grid" href="order_detail.html">
+						<div class="box-item">
+							<img src="../wap/img/app-tub.png"/>
+							<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+						</div>
+						<div class="box-sec">
+							<p class="ptms">&#65509;99.00</p>
+							<div class="rtm"><img src="../wap/img/app-gwc.png"/></div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="box-grid" href="order_detail.html">
+						<div class="box-item">
+							<img src="../wap/img/app-tub.png"/>
+							<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+						</div>
+						<div class="box-sec">
+							<p class="ptms">&#65509;99.00</p>
+							<div class="rtm"><img src="../wap/img/app-gwc.png"/></div>
+						</div>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	
+		<!--购物车-->
+		<div class="ord-gwc">
+			<a class="ord-box">
+				<div class="ord-act">
+					<span class="mui-badge mui-badge-warning stc">2</span>
+				</div>				
+				<img src="../wap/img/app-bgwc.png"/>
+			</a>			
+		</div>
+				
+		<div class="ord-imtow" style="display: none;"></div>
+		<div class="ord-bct" style="display: none;">
+				<div class="imtt">
+					<span class="sp">购物车</span>
+					<div class="ftm"><a><i></i>清空</a></div>
+				</div>
+				<ul id="OA_task_1" class="mui-table-view">
+					<li class="mui-table-view-cell">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle ord-post">
+							<div class="ord-itw">
+								<img src="../wap/img/app-tub.png"/>
+							</div>
+							<div class="ord-cen">
+								<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+								<ins>&#65509;99.00</ins>
+								<div class="ord-ft">
+									<div class="mui-numbox">
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</li>		
+					<li class="mui-table-view-cell">
+						<div class="mui-slider-right mui-disabled">
+							<a class="mui-btn mui-btn-red">删除</a>
+						</div>
+						<div class="mui-slider-handle ord-post">
+							<div class="ord-itw">
+								<img src="../wap/img/app-tub.png"/>
+							</div>
+							<div class="ord-cen">
+								<p class="pt">时尚大容量帆布提挎包时尚大容量帆布</p>
+								<ins>&#65509;99.00</ins>
+								<div class="ord-ft">
+									<div class="mui-numbox">
+										<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+										<input class="mui-input-numbox" type="number" />
+										<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+									</div>
+								</div>
+							</div>							
+						</div>
+					</li>		
+				</ul>
+				<div class="ord-ctn">
+					<p class="spw">共6件商品，支付金额<span>&#65509;189.00</span>元</p>
+					<div class="srt"><a href="order_confirm.html">去结算</a></div>					
+				</div>
+			</div>
+		
+		<script>
+			$(document).ready(function(){
+				$('.ord-box').unbind().click(function(){
+					$('.ord-imtow,.ord-bct').css("bottom","80px").animate({"bottom":"50px"},500).show();
+				});
+				$('.ord-imtow').click(function(){
+					$('.ord-imtow,.ord-bct').hide();
+				});
+			});
+		</script>
+		
+		
+		
+		
+		<nav class="cen-bar">
+			<div class="cen-line">			
+				<a href="../index.html">
+					<i class="iconfont">&#xe600;</i>
+					<label class="pt">钱包首页</label>				
+				</a>								
+				<a class="act" href="order.html">
+					<i class="iconfont">&#xe601;</i>
+					<label class="pt">商品列表</label>
+				</a>								
+				<a href="orderlist.html">
+					<i class="iconfont">&#xe603;</i>
+					<label class="pt">账单列表</label>
+				</a>								
+				<a href="../person/center.html">
+					<i class="iconfont">&#xe602;</i>
+					<label class="pt">个人中心</label>
+				</a>								
+			</div>
+		</nav>
+	</body>
+</html>

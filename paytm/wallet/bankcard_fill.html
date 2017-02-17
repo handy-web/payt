@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <title>提现银行卡</title> 
+	    <script src="../wap/js/mui.js"></script>
+	    <link href="../wap/css/mui.css" rel="stylesheet"/>
+	    <link href="../wap/css/style.css" rel="stylesheet" />
+	    <link rel="stylesheet" href="../wap/css/sm.css" />
+	    <script type="text/javascript" src="../wap/js/jquery-1.9.0.min.js" ></script>
+	    <script>jQuery.noConflict()</script>
+	    <script type="text/javascript" src="../wap/js/zepto.js" ></script> 
+	</head>
+	<body>
+		<div class="bank_in">			
+			<ul class="bank-mtc">
+				<li>
+					<a class="bank-cel" href="balance_chose.html">
+						<div class="bank-htm">开户行</div>
+						<div class="bank-rtm">
+							<span class="bte">工商银行</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="bank-cel">
+						<div class="bank-htm">开户地区</div>								
+						<div class="bank-row page" id="page-city-picker"><input type="" id="city-picker" readonly value="请选择" /></div>					
+						<div class="bank-rtm"><span class="bte"></span></div>
+					</a>
+				</li> 
+				<li>
+					<a class="bank-cel" href="bankcard_branch.html">
+						<div class="bank-htm">支行名称</div>
+						<div class="bank-rtm"><span class="bte">七宝支行</span></div>
+					</a>
+				</li>
+			</ul>			
+		</div>
+		<ul class="bank-bar bank-tz">				
+			<li>
+				<span class="stm">银行卡号</span>
+				<input class="input" type="text" name="" value="" placeholder="请正确输入您的银行卡号，以免无法提现" />
+			</li>
+			<li>
+				<span class="stm">账户实名</span>
+				<input class="input" type="text" name="" value="" placeholder="请输入您的开户的真实名字" />
+			</li>
+			<li>
+				<span class="stm">身份号码</span>
+				<input class="input" type="text" name="" value="" placeholder="请输入您的开户时填写的身份证号" />
+			</li>
+		</ul>
+		<div class="bank-lat">
+			<a>提交认证</a>
+		</div>
+		
+		<!--遮掩背景--> 
+		<div class="bank-bgs" style="display: none;"></div>
+		<!--手机验证码--> 
+		<div class="fast-tg" style="display: none;">
+			<div class="fast-bgm">
+				<div class="fast-title">输入支付密码</div>
+				<div class="fast-cent">
+					<div class="tm">绑定提现银行卡，需验证支付密码。</div>
+					<div class="fast-im">
+						<input type="password" name="" value="" placeholder="请输入支付密码" />
+					</div>
+					<div class="fast-re">
+						<p class="pt"><a>忘记支付密码！</a></p>
+					</div>
+				</div>
+				<div class="f-but"> 
+					<div class="bck">					
+						<a id="lode">取消</a>	 				
+						<a class="butm" href="bankcard_success.html">确认</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$(document).ready(function(){				
+				$('.bank-lat a').click(function(){
+					$('.bank-bgs,.fast-tg').show(); 
+				});
+				$('#lode').click(function(){
+					$('.bank-bgs,.fast-tg').hide();
+				});
+			});
+		</script> 
+		<script type="text/javascript" src="../wap/js/sm.js" ></script> 
+		<script type="text/javascript" src="../wap/js/sm-city-picker.js" ></script>
+		<script type="text/javascript" src="../wap/js/demos.js" ></script>
+	</body>
+</html>
